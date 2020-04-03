@@ -10,7 +10,6 @@ services:
             - PGID=100
             - VERSION=docker
         volumes:
-            - /sharedfolders/Media:/media
-            - /sharedfolders/Config/plex:/config
-            - /sharedfolders/Transcode:/transcode
+            - /srv/dev-disk-by-label-HDD/Media:/media
+            - /srv/dev-disk-by-label-HDD/Config/plex:/config
         restart: unless-stopped

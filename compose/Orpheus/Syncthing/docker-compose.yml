@@ -10,8 +10,8 @@ services:
             - PGID=100
             - TZ=Europe/London
         volumes:
-            - /sharedfolders/Syncthing:/sync
-            - /sharedfolders/Config/syncthing:/config
-            - /sharedfolders/Media:/sync/Media
-            - /sharedfolders/Documents:/sync/Documents
+            - /srv/dev-disk-by-label-HDD/Syncthing:/sync
+            - /srv/dev-disk-by-label-HDD/Config/syncthing:/config
+            - /srv/dev-disk-by-label-HDD/Media:/sync/Media
+            - /srv/dev-disk-by-label-HDD/Documents:/sync/Documents
         restart: unless-stopped
